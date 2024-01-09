@@ -1,35 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style>
-          body {
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
             text-align: center;
             background-color: #F9F1D8;
-          }
-     
-        div { 
-            margin: 10px; 
-        } 
+            margin: 0;
+            padding: 0;
+        }
 
-  
-        @media screen and (max-width: 500px) { 
-  
-            .first, 
-            .second, 
-            .third { 
-                width: 70%; 
-            } 
-        } 
-    </style> 
-        </style>
-        <title>Your Page Title</title>
-      </head>
-<div class="first second third" style="text-align:center; background-color: #F9F1D8;">
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSepoQ8MA1RZcY7ySm-FHeSfwefQESJPMVa6RN8QcvqkGPL1nw/viewform?embedded=true" width="640" height="6000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-</div>
+        div {
+            margin: 10px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100vh; /* Adjust the height as needed */
+        }
+
+        @media only screen and (max-width: 768px) {
+            /* Adjust styles for smaller screens */
+            iframe {
+                height: 800px; /* Adjust the height for smaller screens */
+            }
+        }
+    </style>
+    <title>Your Page Title</title>
+</head>
 <body>
-    
+    <div>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSepoQ8MA1RZcY7ySm-FHeSfwefQESJPMVa6RN8QcvqkGPL1nw/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
 </body>
 </html>

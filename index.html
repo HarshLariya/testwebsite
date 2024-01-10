@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +12,8 @@
             background-color: #F9F1D8;
             margin: 0;
             padding: 0;
+
+            
         }
 
         div {
@@ -18,6 +23,7 @@
         iframe {
             width: 100%;
             height: 100vh; /* Adjust the height as needed */
+            /* position: absolute; */
         }
 
         @media only screen and (max-width: 768px) {
@@ -26,13 +32,31 @@
                 height: 800px; /* Adjust the height for smaller screens */
             }
         }
+        img{
+            max-height: 22.5vw ;
+            max-width: 90vw;
+            height: 160px;
+            width: 640px;
+            border: 1px solid rgb(218,220,224);
+            border-radius: 8px;
+            margin-top: 12px;
+            background-size: cover;
+            background-position: center;
+            -webkit-box-direction: normal;
+
+            
+            /* display: block; */
+        }
+       
     </style>
     
     <title>Your Page Title</title>
 </head>
 <body>
     <div>
+        <img id="banner" src="/Zollegebanner.jpeg" alt="Zollege Banner" frameborder="0" marginheight="0" marginwidth="0">
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSepoQ8MA1RZcY7ySm-FHeSfwefQESJPMVa6RN8QcvqkGPL1nw/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
     </div>
+ 
 </body>
 </html>
